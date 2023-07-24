@@ -5,6 +5,7 @@ const router = express.Router();
 
 router.get("/codeblockpage/:title", async (req, res) => {
     const { title } = req.params;
+    
     try {
       const codeBlock = await CodeBlockModel.findOne({ title }).exec();
       res.json(codeBlock);
@@ -13,5 +14,6 @@ router.get("/codeblockpage/:title", async (req, res) => {
       res.status(500).json({ error: "Internal server error" });
     }
   });
+
 
   module.exports = router;
