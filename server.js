@@ -5,6 +5,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const socketMethods = require("./socketMethods");
 const routes = require("./routes");
+require('dotenv').config();
 
 const app = express();
 app.use(cors());
@@ -18,7 +19,7 @@ const io = new Server(server, {
   },
 });
 
-mongoose.connect("mongodb://localhost:27017/codingMentorshipDB", {
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@costmanager.tqoiuuv.mongodb.net/codingMentorshipDB`, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
