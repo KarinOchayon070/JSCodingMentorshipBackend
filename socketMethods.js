@@ -21,10 +21,20 @@ const socketMethods = (io) => {
 
     socket.on("codeBlockChange", async (data) => {
       try {
-        const { title, code } = data;
+        const { title, code , solution} = data;
+
+        // const result = "hi";
+        // const testCode = new Function(code);
+        // if (testCode() === result){  
+        //   console.log("dddd")
+
+        // }
+
+        // console.log(testCode())
+
         const codeBlock = await CodeBlockModel.findOneAndUpdate(
           { title },
-          { code },
+          { code, solution },
           { new: true }
         ).exec();
         socket.broadcast.emit("codeBlockUpdated", codeBlock);
