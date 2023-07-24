@@ -14,6 +14,7 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
+    origin: ["http://localhost:3000", "https://js-coding-mentorship-frontend.onrender.com"], 
     methods: ["GET"],
   },
 });
@@ -26,6 +27,8 @@ mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD
 app.use("/", routes);
 socketMethods(io);
 
-server.listen(3001, () => {
+const PORT = process.env.PORT || 3001 
+
+server.listen(PORT, () => {
   console.log("Yay! Server is running");
 });
