@@ -14,7 +14,6 @@ app.use(express.json());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "https://js-coding-mentorship-frontend.onrender.com"], // Update this to match your frontend URL
     methods: ["GET"],
   },
 });
