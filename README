@@ -2,7 +2,7 @@
 - This repository contains the backend code for the Online Coding Web Application, a real-time coding collaboration platform designed for mentors and students to interact and work on JavaScript code remotely.
 -  The backend is built using nods.js & express and provides essential functionality for code block management, real-time collaboration, and communication between clients.
 
-## Features 🌿
+## Features 🌿 D
 - Code Block Management: Mentors can create and manage code blocks, each containing a title and a JavaScript code snippet.
 - Real-time Collaboration: The application uses Socket.io to enable real-time code updates. When a student makes changes to a code block, the changes are instantly reflected for both the student and the mentor.
 - Syntax Highlighting: The backend utilizes CodeMirror to highlight the syntax of JavaScript code, providing a better coding experience.
