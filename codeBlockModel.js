@@ -16,6 +16,5 @@ const codeBlockSchema = new mongoose.Schema({
   });
   
   const CodeBlockModel = mongoose.model("CodeBlock", codeBlockSchema)
-
-
+  
   module.exports = CodeBlockModel;
