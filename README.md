@@ -1,4 +1,4 @@
-# Online Coding Web Application "Coding Mentorship" - Backend 💻
+# Online Coding Web Application - "Coding Mentorship" - Backend 💻
 - This repository contains the backend code for the Online Coding Web Application, a real-time coding collaboration platform designed for mentors and students to interact and work on JavaScript code remotely.
 -  The backend is built using nods.js & express and provides essential functionality for code block management, real-time collaboration, and communication between clients.
 
