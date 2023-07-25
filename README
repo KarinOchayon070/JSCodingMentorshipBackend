@@ -8,7 +8,7 @@
 - Syntax Highlighting: The backend utilizes CodeMirror to highlight the syntax of JavaScript code, providing a better coding experience.
 - MongoDB Integration: All code block details, including titles, code snippets, and solutions, are stored in a MongoDB database. This ensures persistent data storage and easy retrieval of code blocks for mentor-student sessions.
 
-## See more 👁️
+## See more 👁️D
 - Link to the frontend repository - https://github.com/KarinOchayon070/JSCodingMentorshipFrontend.
 - Link to YouTube explantory video - https://www.youtube.com/watch?v=5OzKGoF__4o&ab_channel=KarinOchayon.
 
